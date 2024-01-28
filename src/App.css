@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  /* background-color: blue; */
+  background-image: url("https://media.istockphoto.com/id/1291405617/photo/tablet-desktop-with-economic-indicators-calculator-and-banknotes.jpg?s=612x612&w=0&k=20&c=5ITeYuo5M1auwnqjQ_g5W5Oi5iDqNeNELpyrdcL27sA=");
+   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* opacity: 0.7; */
+}
+
+.divbox{
+  height: 60vh;
+  width: 60vw;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
+  /* align-items: ; */
+  flex-direction: column;
+
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.input{
+  box-shadow: 1px 1px 8px 2px rgba(255,255,255,1);
+
+  background-color: #181a1e;
+color: white;
+padding: 8px;
+border-radius: 13px;
+cursor: pointer;
+
+}
+.input::placeholder{
+  color: rgb(131, 127, 127);
+}
+#animals{
+  background-color: transparent;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 1px 1px 8px 2px rgba(255,255,255,1);
+  background-color: #181a1e;
+cursor: pointer;
+
+}
+
+.option{
+  background-color: #181a1e;
+  color: white;
+}
+
+
+
+
