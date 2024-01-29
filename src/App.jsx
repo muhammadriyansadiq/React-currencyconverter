@@ -72,18 +72,19 @@ Setresult("block")
   return (
     <div className='parent'>
     <div className='divbox'>
-
+    <h1 className=' text-center text-white p-1 rounded-md text-4xl bg-zinc-900'>Currency Converter</h1>
 <div className=' flex justify-around'>
-  <input onChange={currencytype} type="text" placeholder='enter currency e.g usd' className=' input w-2/3'/>
+ 
+  <input onChange={currencytype} type="text" placeholder='enter currency e.g usd' className=' input p-2 lg:p-3'/>
 
   {/* <p className='p-3 m-2'>To</p> */}
 
   </div>
 
-  <div className=' flex justify-center'><button className=' input' onClick={check}style={{display:`${btn}`}}>Check</button></div>
+  <div className=' flex justify-center '><button className=' input p-2 lg:p-3' onClick={check}style={{display:`${btn}`}}>Check</button></div>
 <div className='flex justify-between'>
   <div>
-<select style={{ display:`${checked}` }} className=' p-2' onChange={onchangecurrency} name="animals" id="animals" >
+<select style={{ display:`${checked}` }} className=' mr-1 p-1 lg:p-3' onChange={onchangecurrency} name="animals" id="animals" >
 
 {
     keys && keys.map((mawad,ind)=>(
@@ -94,12 +95,12 @@ Setresult("block")
 </select>
 </div>
 
-<div style={{display:`${result}`, display:"flex", justifyContent:"space-between",alignItems:"center" }} className=' w-2/3'>
-<p className=' input' style={{display:`${result}`}}>1{firstcurrency}</p>
+<div style={{display:`${result}`, display:"flex", justifyContent:"space-between",alignItems:"center" }} className=' w-2/3 mr-1'>
+<p className=' input mr-1 p-1 lg:p-3 lg:mx-3' style={{display:`${result}`}}>1{firstcurrency}</p>
 <p  style={{display:`${result}`,color:"#181a1e",fontSize:"24px"}}><FaEquals />
 
 </p>
-<p className='input' style={{display:`${result}`}}>{conversioncurrency}</p>
+<p className='input mr-1 ml-1 p-1 lg:p-3 lg:ml-3' style={{display:`${result}`}}>{conversioncurrency}</p>
 </div>
 
 </div>

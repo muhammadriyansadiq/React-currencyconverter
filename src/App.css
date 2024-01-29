@@ -19,7 +19,7 @@ body{
 
 .divbox{
   height: 60vh;
-  width: 60vw;
+  /* width: 60vw; */
   /* border: 1px solid black; */
   display: flex;
   justify-content: space-around;
@@ -40,13 +40,13 @@ body{
 
   background-color: #181a1e;
 color: white;
-padding: 8px;
+/* padding: 8px; */
 border-radius: 13px;
 cursor: pointer;
 
 }
 .input::placeholder{
-  color: rgb(131, 127, 127);
+  color: rgb(205, 202, 202);
 }
 #animals{
   background-color: transparent;
@@ -61,6 +61,12 @@ cursor: pointer;
 .option{
   background-color: #181a1e;
   color: white;
+}
+
+@media(min-width:1024px){
+  .firstinput{
+    padding: 22px;
+  }
 }
 
 
